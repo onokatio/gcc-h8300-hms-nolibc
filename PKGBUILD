@@ -4,15 +4,17 @@
 # then please put 'unknown'.
 
 # Maintainer: Your Name <youremail@domain.com>
-pkgname=gcc-h8300-hms
+pkgname=gcc-h8300-hms-nolibc
 pkgver=3.4.6
 pkgrel=1
-pkgdesc="h8300 cross GCC"
+pkgdesc="h8300 cross GCC without newlib"
 arch=('x86_64')
 url=""
 license=('GPL')
 groups=()
 depends=('binutils-h8300-hms')
+privedes=('gcc-h8300-hms')
+conflicts=('gcc-h8300-hms')
 makedepends=()
 install=
 source=("gcc-h8300-hms.deb::http://ftp.jp.debian.org/debian/pool/main/g/gcc-h8300-hms/gcc-h8300-hms_3.4.6+dfsg2-4_amd64.deb")
